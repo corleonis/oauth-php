@@ -1,5 +1,5 @@
 <?php
-namespace Moo\Oauth;
+namespace Corleonis\Oauth;
 
 /**
  * Simple exception wrapper for OAuth

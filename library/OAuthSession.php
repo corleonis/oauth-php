@@ -1,5 +1,5 @@
 <?php
-namespace Moo\Oauth;
+namespace Corleonis\Oauth;
 
 /**
  * Storage container for the oauth credentials, both server and consumer side.

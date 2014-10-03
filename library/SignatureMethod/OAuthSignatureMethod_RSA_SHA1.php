@@ -1,7 +1,7 @@
 <?php
-namespace Moo\Oauth\SignatureMethod;
+namespace Corleonis\Oauth\SignatureMethod;
 
-use Moo\Oauth\OAuthException2;
+use Corleonis\Oauth\OAuthException2;
 
 /**
  * OAuth signature implementation using PLAINTEXT

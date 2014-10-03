@@ -1,7 +1,7 @@
 <?php
-namespace Moo\Oauth\Body;
+namespace Corleonis\Oauth\Body;
 
-use Moo\Oauth\OAuthException2;
+use Corleonis\Oauth\OAuthException2;
 
 /**
  * Create the body for a multipart/form-data message.

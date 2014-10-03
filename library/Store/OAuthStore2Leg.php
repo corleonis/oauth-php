@@ -1,7 +1,7 @@
 <?php
-namespace Moo\Oauth\Store;
+namespace Corleonis\Oauth\Store;
 
-use Moo\Oauth\OAuthException2;
+use Corleonis\Oauth\OAuthException2;
 
 /**
  * OAuthStore implementation for 2 legged OAuth. This 'store' just saves the 

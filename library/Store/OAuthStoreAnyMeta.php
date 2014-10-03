@@ -1,5 +1,5 @@
 <?php
-namespace Moo\Oauth\Store;
+namespace Corleonis\Oauth\Store;
 
 /**
  * Storage container for the oauth credentials, both server and consumer side.

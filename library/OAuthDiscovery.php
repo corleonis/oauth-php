@@ -1,7 +1,7 @@
 <?php
-namespace Moo\Oauth;
+namespace Corleonis\Oauth;
 
-use Moo\Oauth\Discovery\XRDS;
+use Corleonis\Oauth\Discovery\XRDS;
 
 /**
  * Handle the discovery of OAuth service provider endpoints and static consumer identity.

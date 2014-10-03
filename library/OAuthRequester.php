@@ -1,6 +1,7 @@
 <?php
-namespace Moo\Oauth;
-use Moo\Oauth\Body\OAuthBodyContentDisposition;
+namespace Corleonis\Oauth;
+
+use Corleonis\Oauth\Body\OAuthBodyContentDisposition;
 
 /**
  * Perform a signed OAuth request with a GET, POST, PUT or DELETE operation.

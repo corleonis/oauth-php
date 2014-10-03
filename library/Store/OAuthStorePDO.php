@@ -1,5 +1,5 @@
 <?php
-namespace Moo\Oauth\Store;
+namespace Corleonis\Oauth\Store;
 
 /**
  * Storage container for the oauth credentials, both server and consumer side.
@@ -31,7 +31,7 @@ namespace Moo\Oauth\Store;
  * THE SOFTWARE.
  */
 
-use Moo\Oauth\OAuthException2;
+use Corleonis\Oauth\OAuthException2;
 use PDOException;
 
 class OAuthStorePDO extends OAuthStoreSQL
@@ -59,7 +59,7 @@ class OAuthStorePDO extends OAuthStoreSQL
 			{
 				$this->conn = new PDO($options['dsn'], $options['username'], @$options['password']);
 			}
-			catch (PDOException $e) 
+			catch (PDOException $e)
 			{
 				throw new OAuthException2('Could not connect to PDO database: ' . $e->getMessage());
 			}

@@ -1,6 +1,7 @@
 <?php
-namespace Moo\Oauth\Store;
-use Moo\Oauth\OAuthException2;
+namespace Corleonis\Oauth\Store;
+
+use Corleonis\Oauth\OAuthException2;
 
 /**
  * Added by Vinay Kant Sahu.

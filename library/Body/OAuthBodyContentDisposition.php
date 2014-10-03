@@ -1,6 +1,6 @@
 <?php
-namespace Moo\Oauth\Body;
-use Moo\Oauth\OAuthException2;
+namespace Corleonis\Oauth\Body;
+use Corleonis\Oauth\OAuthException2;
 
 /**
  * Add the extra headers for a PUT or POST request with a file.

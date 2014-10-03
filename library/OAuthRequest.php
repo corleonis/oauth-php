@@ -1,5 +1,5 @@
 <?php
-namespace Moo\Oauth;
+namespace Corleonis\Oauth;
 
 /**
  * Request wrapper class.  Prepares a request for consumption by the OAuth routines

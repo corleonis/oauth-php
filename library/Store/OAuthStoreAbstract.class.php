@@ -1,5 +1,5 @@
 <?php
-namespace Moo\Oauth\Store;
+namespace Corleonis\Oauth\Store;
 
 /**
  * Abstract base class for OAuthStore implementations

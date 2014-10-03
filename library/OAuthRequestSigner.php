@@ -1,5 +1,5 @@
 <?php
-namespace Moo\Oauth;
+namespace Corleonis\Oauth;
 
 /**
  * Sign requests before performing the request.

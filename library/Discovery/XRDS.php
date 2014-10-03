@@ -1,5 +1,5 @@
 <?php
-namespace Moo\Oauth\Discovery;
+namespace Corleonis\Oauth\Discovery;
 
 use DOMDocument;
 use DOMElement;

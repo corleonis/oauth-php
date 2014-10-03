@@ -1,5 +1,5 @@
 <?php
-namespace Moo\Oauth\Store;
+namespace Corleonis\Oauth\Store;
 
 /**
  * OAuthSession is a really *dirty* storage. It's useful for testing and may 
@@ -31,8 +31,8 @@ namespace Moo\Oauth\Store;
  * THE SOFTWARE.
  */
 
-use Moo\Oauth\OAuthException2;
-use Moo\Oauth\Store\OAuthStoreAbstract;
+use Corleonis\Oauth\OAuthException2;
+use Corleonis\Oauth\Store\OAuthStoreAbstract;
 
 class OAuthStoreSession extends OAuthStoreAbstract
 {

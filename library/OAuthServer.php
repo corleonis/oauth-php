@@ -1,5 +1,5 @@
 <?php
-namespace Moo\Oauth;
+namespace Corleonis\Oauth;
 
 /**
  * Server layer over the OAuthRequest handler

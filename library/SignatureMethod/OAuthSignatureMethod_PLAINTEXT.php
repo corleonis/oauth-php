@@ -1,5 +1,5 @@
 <?php
-namespace Moo\Oauth\SignatureMethod;
+namespace Corleonis\Oauth\SignatureMethod;
 
 /**
  * OAuth signature implementation using PLAINTEXT

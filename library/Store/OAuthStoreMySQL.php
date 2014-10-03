@@ -1,7 +1,7 @@
 <?php
-namespace Moo\Oauth\Store;
+namespace Corleonis\Oauth\Store;
 
-use Moo\Oauth\OAuthException2;
+use Corleonis\Oauth\OAuthException2;
 
 /**
  * Storage container for the oauth credentials, both server and consumer side.
