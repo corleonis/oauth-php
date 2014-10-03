@@ -10,6 +10,7 @@
     "authors": [
         {
             "name": "Alex Rashkov",
+            "email": "noemail@spam.com",
             "homepage": "https://github.com/corleonis",
             "role": "Developer"
         }
