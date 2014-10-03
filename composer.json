@@ -1,0 +1,24 @@
+{
+    "name": "PhpOAuth",
+    "type": "library",
+    "description": "This is a PHP oAuth v1 client/provider library.",
+    "keywords": ["oauth", "oauth v1", "oauth client", "oauth server", "oauth provider"],
+    "homepage": "https://github.com/corleonis/oauth-php",
+    "version": "1.0.0",
+    "time": "2014-10-03",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Rashkov",
+            "homepage": "https://github.com/corleonis",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-4": {"Corleonis\\Oauth": "library/"}
+    },
+    "minimum-stability": "devs"
+}
