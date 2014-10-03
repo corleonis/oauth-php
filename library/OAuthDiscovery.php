@@ -1,4 +1,7 @@
 <?php
+namespace Moo\Oauth;
+
+use Moo\Oauth\Discovery\XRDS;
 
 /**
  * Handle the discovery of OAuth service provider endpoints and static consumer identity.
@@ -28,13 +31,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
-require_once __DIR__.'/discovery/xrds_parse.php';
-
-require_once __DIR__.'/OAuthException2.php';
-require_once __DIR__.'/OAuthRequestLogger.php';
-
-
 class OAuthDiscovery
 {
 	/**
@@ -43,7 +39,7 @@ class OAuthDiscovery
 	 * 
 	 * See also: http://oauth.net/discovery/#consumer_identity_types
 	 * 
-	 * @param string uri
+	 * @param string $uri
 	 * @return array		provider description
 	 */
 	static function discover ( $uri )
@@ -52,7 +48,7 @@ class OAuthDiscovery
 		$xrds_file = self::discoverXRDS($uri);
 		if (!empty($xrds_file))
 		{
-			$xrds = xrds_parse($xrds_file);
+			$xrds = XRDS::parse($xrds_file);
 			if (empty($xrds))
 			{
 				throw new OAuthException2('Could not discover OAuth information for '.$uri);
@@ -132,8 +128,9 @@ class OAuthDiscovery
 	 * Discover the XRDS file at the uri.  This is a bit primitive, you should overrule
 	 * this function so that the XRDS file can be cached for later referral.
 	 * 
-	 * @param string uri
-	 * @return string		false when no XRDS file found
+	 * @param string $uri
+     * @param int $recur default 0
+	 * @return string false when no XRDS file found
 	 */
 	static protected function discoverXRDS ( $uri, $recur = 0 )
 	{
@@ -219,8 +216,3 @@ class OAuthDiscovery
 		return $txt;
 	}
 }
-
-
-/* vi:set ts=4 sts=4 sw=4 binary noeol: */
-
-?>

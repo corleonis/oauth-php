@@ -1,4 +1,5 @@
 <?php
+namespace Moo\Oauth;
 
 /**
  * Server layer over the OAuthRequest handler
@@ -29,10 +30,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
-require_once 'OAuthRequestVerifier.php';
-require_once 'OAuthSession.php';
-
 class OAuthServer extends OAuthRequestVerifier
 {
 	protected $session;
@@ -327,7 +324,3 @@ class OAuthServer extends OAuthRequestVerifier
 		exit();
 	}	
 }
-
-/* vi:set ts=4 sts=4 sw=4 binary noeol: */
-
-?>

@@ -1,4 +1,5 @@
 <?php
+namespace Moo\Oauth;
 
 /**
  * Verify the current request.  Checks if signed and if the signature is correct.
@@ -30,11 +31,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
-require_once __DIR__ . '/OAuthStore.php';
-require_once __DIR__ . '/OAuthRequest.php';
-
-
 class OAuthRequestVerifier extends OAuthRequest
 {
 	private $request;
@@ -298,8 +294,3 @@ class OAuthRequestVerifier extends OAuthRequest
 			$this->accepted_signatures = null;
 	}
 }
-
-
-/* vi:set ts=4 sts=4 sw=4 binary noeol: */
-
-?>

@@ -1,4 +1,6 @@
 <?php
+namespace Moo\Oauth;
+use Moo\Oauth\Body\OAuthBodyContentDisposition;
 
 /**
  * Perform a signed OAuth request with a GET, POST, PUT or DELETE operation.
@@ -28,10 +30,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
-require_once __DIR__ . '/OAuthRequestSigner.php';
-require_once __DIR__ . '/body/OAuthBodyContentDisposition.php';
-
 
 class OAuthRequester extends OAuthRequestSigner
 {
@@ -514,7 +512,3 @@ class OAuthRequester extends OAuthRequestSigner
 		return $curl_options;
 	}
 }
-
-/* vi:set ts=4 sts=4 sw=4 binary noeol: */
-
-?>

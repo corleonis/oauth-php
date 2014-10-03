@@ -1,4 +1,5 @@
 <?php
+namespace Moo\Oauth;
 
 /**
  * Sign requests before performing the request.
@@ -29,12 +30,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
-
-require_once __DIR__ . '/OAuthStore.php';
-require_once __DIR__ . '/OAuthRequest.php';
-
-
 class OAuthRequestSigner extends OAuthRequest
 {
 	protected $request;
@@ -205,8 +200,3 @@ class OAuthRequestSigner extends OAuthRequest
 	}
 
 }
-
-
-/* vi:set ts=4 sts=4 sw=4 binary noeol: */
-
-?>

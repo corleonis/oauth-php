@@ -1,4 +1,5 @@
 <?php
+namespace Moo\Oauth;
 
 /**
  * Log OAuth requests
@@ -309,7 +310,3 @@ class OAuthRequestLogger
 		return $retarr;
 	}
 }
-
-/* vi:set ts=4 sts=4 sw=4 binary noeol: */
-
-?>

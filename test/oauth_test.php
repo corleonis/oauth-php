@@ -181,7 +181,3 @@ function oauth_assert_handler ( $file, $line, $code )
 	echo "\nAssertion failed in $file:$line
    $code\n\n";
 }
-
-/* vi:set ts=4 sts=4 sw=4 binary noeol: */
-
-?>

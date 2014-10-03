@@ -1,4 +1,5 @@
 <?php
+namespace Moo\Oauth;
 
 /**
  * Storage container for the oauth credentials, both server and consumer side.
@@ -30,9 +31,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
-require_once __DIR__ . '/OAuthException2.php';
-
 class OAuthStore
 {
 	static private $instance = false;
@@ -78,8 +76,3 @@ class OAuthStore
 	    return OAuthStore::$instance;	
 	}
 }
-
-
-/* vi:set ts=4 sts=4 sw=4 binary noeol: */
-
-?>

@@ -1,4 +1,5 @@
 <?php
+namespace Moo\Oauth;
 
 /**
  * Simple exception wrapper for OAuth
@@ -28,22 +29,13 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
 // TODO: something with the HTTP return code matching to the problem
-
-require_once __DIR__ . '/OAuthRequestLogger.php';
-
-class OAuthException2 extends Exception
+class OAuthException2 extends \Exception
 {
 	function __construct ( $message )
 	{
-		Exception::__construct($message);
+		parent::__construct($message);
 		OAuthRequestLogger::addNote('OAuthException2: '.$message);
 	}
 
 }
-
-
-/* vi:set ts=4 sts=4 sw=4 binary noeol: */
-
-?>

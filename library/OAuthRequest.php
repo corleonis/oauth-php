@@ -1,4 +1,5 @@
 <?php
+namespace Moo\Oauth;
 
 /**
  * Request wrapper class.  Prepares a request for consumption by the OAuth routines
@@ -28,9 +29,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
-
-require_once __DIR__ . '/OAuthException2.php';
 
 /**
  * Object to parse an incoming OAuth request or prepare an outgoing OAuth request
@@ -811,8 +809,3 @@ class OAuthRequest
 		exit();
 	}
 }
-
-
-/* vi:set ts=4 sts=4 sw=4 binary noeol: */
-
-?>
