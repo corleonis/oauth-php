@@ -1,5 +1,5 @@
 {
-    "name": "PhpOAuth",
+    "name": "corleonis/oauth",
     "type": "library",
     "description": "This is a PHP oAuth v1 client/provider library.",
     "keywords": ["oauth", "oauth v1", "oauth client", "oauth server", "oauth provider"],
